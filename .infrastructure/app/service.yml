@@ -7,6 +7,6 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: http
+      targetPort: 4000
   selector:
     app: todoapp

@@ -9,7 +9,5 @@ POST_REQUEST = Counter("http_post_request_total", "Total number of POST requests
 def todolist_metrics(request):
     if request.method == "GET":
         GET_REQUEST.inc()
-    elif request.method == "POST":
-        POST_REQUEST.inc()
 
     return HttpResponse(generate_latest(), content_type=CONTENT_TYPE_LATEST)

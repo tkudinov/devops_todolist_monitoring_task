@@ -9,6 +9,6 @@ spec:
     matchLabels:
       app: todoapp
   endpoints:
-    - port: http
+    - port: 4000
       path: /metrics
       interval: 10s

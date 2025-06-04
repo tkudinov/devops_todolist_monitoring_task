@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import include, path
-from metrics import todolist_metrics
+from .metrics import todolist_metrics
 
 from src.lists.views import todolist
 
