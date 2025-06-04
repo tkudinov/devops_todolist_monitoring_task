@@ -3,7 +3,6 @@ from django.http import HttpResponse
 
 # Define Prometheus Counters
 GET_REQUEST = Counter("http_get_request_total", "Total number of GET requests")
-POST_REQUEST = Counter("http_post_request_total", "Total number of POST requests")
 
 # Metrics Endpoint
 def todolist_metrics(request):
